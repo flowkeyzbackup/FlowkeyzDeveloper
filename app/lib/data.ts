@@ -29,40 +29,85 @@ export const projects: Project[] = [
     domain: "Healthcare",
     description:
       "Telemedicine platform that connects patients across Nigeria to verified doctors by app and web, with health insurance built into the booking flow.",
+    stack: [
+      "Vue.js",
+      "Nuxt.js",
+      "Vuex",
+      "JavaScript",
+      "REST API",
+      "GraphQL",
+    ],
   },
   {
     name: "MyBeautyButler",
     domain: "Beauty & wellness",
     description:
       "On-demand booking app where customers find and book beauty and wellness professionals, and professionals manage clients and appointments.",
+    stack: [
+      "flutter",
+      "Redux",
+      "TypeScript",
+      "React.js",
+      "Nest.js",
+      "Express",
+      "REST API",
+
+    ],
   },
   {
     name: "Celedom",
     domain: "Events",
     description:
       "Marketplace where people planning celebrations find event vendors. Vendors get a profile, a dashboard for new requests and earnings, and in-app chat with clients.",
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "React Native",
+      "Node.js",
+      "Express",
+      "WebSockets",
+      "REST API",
+    ],
   },
   {
     name: "GetSermons",
     domain: "Faith & media",
-    description: "A product of Lumine Media for finding and listening to sermons.",
+    description:
+      "A product of Lumine Media for finding and listening to sermons.",
+    stack: [
+      "Vue.js",
+      "Node.js",
+      "Express",
+      "REST API",
+      "React-Native",
+    ],
   },
   {
     name: "HustleBetter",
     domain: "Community",
     description: "Product work for HustleBetter.",
+    stack: [
+      "Next.js",
+      "React",
+      "React-Native",
+      "Expo",
+      "TypeScript",
+      "Node.js",
+      "Express",
+    ],
   },
 ];
 
 export const mentoring = [
   {
     name: "360maas Hub",
-    role: "Mentor",
+    role: "Mentor/Instructor",
     description: "Guided learners and early-career developers through real project work.",
   },
   {
     name: "Tellvalley",
-    role: "Mentor",
+    role: "Mentor/CTO",
     description: "Coached developers on building and shipping production-ready apps.",
   },
 ];

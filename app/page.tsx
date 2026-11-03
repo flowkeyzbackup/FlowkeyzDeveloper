@@ -88,7 +88,7 @@ export default function Home() {
                           )}
                         </div>
                       ) : (
-                        <span className={hint}>Add your role, stack and one result in lib/data.ts</span>
+                        <span className={hint}>{p.stack}</span>
                       )}
                     </div>
                   </article>
