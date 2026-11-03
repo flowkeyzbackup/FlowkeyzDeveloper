@@ -1,7 +1,9 @@
 "use client";
 
 import { motion, useReducedMotion, type Variants } from "motion/react";
-import { profile } from "../lib/data"
+import { Download } from "lucide-react";
+
+import { profile } from "../lib/data";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -22,17 +24,43 @@ const words: { text: string; accent?: boolean }[] = [
 
 const container: Variants = {
   hidden: {},
-  show: { transition: { staggerChildren: 0.06, delayChildren: 0.15 } },
+  show: {
+    transition: {
+      staggerChildren: 0.06,
+      delayChildren: 0.15,
+    },
+  },
 };
 
 const word: Variants = {
-  hidden: { opacity: 0, y: "0.5em" },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease } },
+  hidden: {
+    opacity: 0,
+    y: "0.5em",
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease,
+    },
+  },
 };
 
 const fadeUp = (delay: number): Variants => ({
-  hidden: { opacity: 0, y: 16 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, delay, ease } },
+  hidden: {
+    opacity: 0,
+    y: 16,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      delay,
+      ease,
+    },
+  },
 });
 
 export default function Hero() {
@@ -60,7 +88,9 @@ export default function Hero() {
           <motion.span
             key={i}
             variants={word}
-            className={`mr-[0.25em] inline-block ${w.accent ? "text-accent" : ""}`}
+            className={`mr-[0.25em] inline-block ${
+              w.accent ? "text-accent" : ""
+            }`}
           >
             {w.text}
           </motion.span>
@@ -88,11 +118,21 @@ export default function Hero() {
         >
           Work with me
         </a>
+
         <a
           href="#mentoring"
           className="rounded-md border border-fg px-5 py-3 text-[15px] font-semibold transition hover:bg-surface"
         >
           Book a mentoring session
+        </a>
+
+        <a
+          href="/Emmanuel-Sanni-CV.pdf"
+          download
+          className="inline-flex items-center gap-2 rounded-md border border-fg px-5 py-3 text-[15px] font-semibold transition hover:bg-surface"
+        >
+          <Download className="h-4 w-4" />
+          Download CV
         </a>
       </motion.div>
     </div>

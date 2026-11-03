@@ -183,7 +183,7 @@ export default function Home() {
              <ul className="flex flex-wrap gap-5 text-sm">
   <li>
     <a
-      href="https://github.com/your-username"
+      href="https://github.com/flowkeyz1996"
       target="_blank"
       rel="noreferrer"
       className="underline underline-offset-4 hover:text-accent"
@@ -193,7 +193,7 @@ export default function Home() {
   </li>
   <li>
     <a
-      href="https://www.linkedin.com/in/your-name"
+      href="https://www.linkedin.com/in/sanni-emmanuel"
       target="_blank"
       rel="noreferrer"
       className="underline underline-offset-4 hover:text-accent"
