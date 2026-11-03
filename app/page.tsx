@@ -129,7 +129,7 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <span className={`${hint} w-fit`}>Add how many people you have mentored and one outcome</span>
+              {/* <span className={`${hint} w-fit`}>Add how many people you have mentored and one outcome</span> */}
               {profile.bookingHref && (
                 <a
                   href={profile.bookingHref}
