@@ -24,17 +24,28 @@ export default function Home() {
       <ScrollProgress />
 
       <div className="mx-auto max-w-4xl px-5 pb-16">
-        <header className="flex items-center justify-between gap-4 border-b border-line py-5">
-          <span className="font-mono text-[13px]">{profile.handle}</span>
-          <nav aria-label="Sections" className="flex flex-wrap items-center gap-5 text-sm">
-            {nav.map((n) => (
-              <a key={n.href} href={n.href} className="text-muted transition hover:text-fg">
-                {n.label}
-              </a>
-            ))}
-            <ThemeToggle />
-          </nav>
-        </header>
+        <header className="flex flex-col gap-4 border-b border-line py-5 sm:flex-row sm:items-center sm:justify-between">
+  <span className="text-center font-mono text-[13px] sm:text-left">
+    {profile.handle}
+  </span>
+
+  <nav
+    aria-label="Sections"
+    className="flex w-full flex-wrap items-center justify-center gap-x-5 gap-y-3 text-sm sm:w-auto sm:justify-end"
+  >
+    {nav.map((n) => (
+      <a
+        key={n.href}
+        href={n.href}
+        className="whitespace-nowrap text-muted transition-colors hover:text-fg"
+      >
+        {n.label}
+      </a>
+    ))}
+
+    <ThemeToggle />
+  </nav>
+</header>
 
         <main>
           <Hero />
